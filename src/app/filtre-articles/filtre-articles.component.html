@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-3 mb-3">
+        <select class="selectpicker" data-style="btn-primary" [(ngModel)]="type" (change)="notifyParent()">
+            <option value="Pays">Pays</option>
+            <option value="Type">Type (Villa...)</option>
+            <option value="PrixInf">Prix inférieur</option>
+            <option value="PrixSup">Prix supérieur</option>
+        </select>
+    </div>
+    <div class="col-md-3 mb-3">
+        <input type="text" [(ngModel)]="inputFiltre" name="inputFiltre" (input)="notifyParent()">
+    </div>
+</div>
