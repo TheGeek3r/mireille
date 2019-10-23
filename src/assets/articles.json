@@ -4,7 +4,7 @@
        "prix" : "299",
        "description" : "Vivez comme un locall! Situé à 15 pas de la plage, adorable villa dans un quartier très calme mais beau.    ",
        "categorie" : "Villa",
-       "image" : "../assets/img/img1.jpg",
+       "image" : "../img/img1.jpg",
        "pays" : "Thailand"
     },
     {
