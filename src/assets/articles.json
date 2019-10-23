@@ -4,7 +4,7 @@
        "prix" : "299",
        "description" : "Vivez comme un locall! Situé à 15 pas de la plage, adorable villa dans un quartier très calme mais beau.    ",
        "categorie" : "Villa",
-       "image" : "../img/img1.jpg",
+       "image" : "https://nsa40.casimages.com/img/2019/10/23/191023110419714854.jpg",
        "pays" : "Thailand"
     },
     {
@@ -12,7 +12,7 @@
         "prix" : "177",
         "description" : "Appartement 1 chambre avec lit king size, salle de bain, cuisine et coin salon / séjour avec canapé-lit.   ",
         "categorie" : "Villa",
-        "image" : "../assets/img/img2.jpg",
+        "image" : "https://nsa40.casimages.com/img/2019/10/23/191023110419923333.jpg",
         "pays" : "Espagne"
     },
     {
@@ -20,7 +20,7 @@
         "prix" : "195",
         "description" : "Beau pavillon situé dans la zone sud et surplombant les plages d'Ipanema et de Copacabana, superbe vue.    ",
         "categorie" : "Chalet",
-        "image" : "../assets/img/img3.jpg",
+        "image" : "https://nsa40.casimages.com/img/2019/10/23/191023110420174549.jpg",
         "pays" : "Bresil"
     },
     {
@@ -28,7 +28,7 @@
         "prix" : "216",
         "description" : "Appartement moderne dans le centre de la zone de tram avec une vue fantastique sur les toits de Melbourne! ",
         "categorie" : "Appartement",
-        "image" : "../assets/img/img6.jpg",
+        "image" : "https://nsa40.casimages.com/img/2019/10/23/191023110420427990.jpg",
         "pays" : "Australie"
     },
     {
@@ -36,7 +36,7 @@
         "prix" : "97",
         "description" : "Laissez-vous séduire par le luxe de ce studio rénové, offrant une vue sur les collines surplombant la côte.",
         "categorie" : "Appartement",
-        "image" : "../assets/img/img7.jpg",
+        "image" : "https://nsa40.casimages.com/img/2019/10/23/191023110420677224.jpg",
         "pays" : "Afrique"
     },
     {
@@ -44,7 +44,7 @@
         "prix" : "70",
         "description" : "Ce chalet en bambou est un refuge isolé en bas d'un petit chemin, à seulement 5 minutes du centre d'Ubud.  ",
         "categorie" : "Chalet",
-        "image" : "../assets/img/img8.jpg",
+        "image" : "https://nsa40.casimages.com/img/2019/10/23/191023110420932833.jpg",
         "pays" : "Indonesie"
     },
     {
@@ -52,7 +52,7 @@
         "prix" : "124",
         "description" : "Maison privée de luxe avec piscine située à coté de magazins, restaurants, coffee shop, bars, clubs...     ",
         "categorie" : "Maison",
-        "image" : "../assets/img/img9.jpg",
+        "image" : "https://nsa40.casimages.com/img/2019/10/23/191023110421267942.jpg",
         "pays" : "Mexique"
     },
     {
@@ -60,7 +60,7 @@
         "prix" : "73",
         "description" : "La maison en bois de bali est à seulement 3 minutes à pied de la plage et vue magnifique sur le jardin     ",
         "categorie" : "Maison",
-        "image" : "../assets/img/img10.jpg",
+        "image" : "https://nsa40.casimages.com/img/2019/10/23/191023110421533753.jpg",
         "pays" : "Indonesie"
     }
 ]
