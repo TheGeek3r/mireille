@@ -6,7 +6,8 @@ import { MustMatch } from '../models/mustMatch';
 
 @Component({
   selector: 'app-formulaire',
-  templateUrl: './formulaire.component.html'
+  templateUrl: './formulaire.component.html',
+  styleUrls: ['./formulaire.component.sass']
 })
 export class FormulaireComponent implements OnInit {
 

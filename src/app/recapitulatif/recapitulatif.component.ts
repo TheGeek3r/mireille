@@ -5,7 +5,7 @@ import {CommonModule} from "@angular/common";
 @Component({
   selector: 'app-recapitulatif',
   templateUrl: './recapitulatif.component.html',
-  styleUrls: ['./recapitulatif.component.css'],
+  styleUrls: ['./recapitulatif.component.sass'],
 })
 export class RecapitulatifComponent implements OnInit {
 
