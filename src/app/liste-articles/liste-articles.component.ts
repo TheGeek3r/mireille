@@ -1,18 +1,18 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ArticleService } from '../service/article.service';
 import { Article } from '../models/article';
-import { Observable, combineLatest } from 'rxjs';
-import { FormControl, FormGroup } from '@angular/forms';
-import { startWith, map } from 'rxjs/operators';  
+import { Store } from '@ngxs/store';
+import { AddArticle, DtlArticle } from '../shared/article.action';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-liste-articles',
   templateUrl: './liste-articles.component.html',
-  styleUrls: ['./liste-articles.component.css']
+  styleUrls: ['./liste-articles.component.sass']
 })
 export class ListeArticlesComponent implements OnInit {
 
-  constructor(private articleService : ArticleService) { }
+  constructor(private articleService : ArticleService, private store : Store, private router : Router) { }
   articles : Article[] = [];
   inputFiltre : string = "";
   type : string = "";
@@ -24,35 +24,41 @@ export class ListeArticlesComponent implements OnInit {
   selection : FormGroup;*/
 
 
-  ngOnInit() {
+  ngOnInit() 
+  {
     this.articleService.getListeArticles().subscribe(value => this.articles = value);
-    }
+  }
 
-    public majType(type: string) {
-      this.type = type;
-    }
+  public majType(type: string) 
+  {
+    this.type = type;
+  }
 
-    public majFiltre(filte: string) {
-      this.inputFiltre = filte;
-    }
+  public majFiltre(filte: string) 
+  {
+   this.inputFiltre = filte;
+  }
 
-    /*this.articles = this.articleService.getListeArticles();
-    this.filtre = new FormControl('');  
-    this.selection = new FormGroup({
-      selectionFiltre : new FormControl()
-    })
-    this.filtres = this.filtre.valueChanges.pipe(startWith(''));
 
-    this.articlesFiltres = combineLatest(this.articles, this.filtres).pipe( 
-      map(([articles, filterString]) => 
-      { 
-        console.log(this.selection.get("selectionFiltre").value);
-        if(this.selection.get("selectionFiltre").value == "prixInf")
-          return articles.filter(article => article.prix > Number(filterString == "" ? Number.MAX_SAFE_INTEGER : filterString))
-        else if(this.selection.get("selectionFiltre").value == "prixSup")
-          return articles.filter(article => article.prix < Number(filterString == "" ? Number.MIN_SAFE_INTEGER : filterString))
-        return articles;
-      }
-      ));*/
-  
+  ajouterAuPanier(article: Article)
+  {
+      this.addArticle (article);
+  }
+
+  addArticle(article: Article)
+  {
+    this.store.dispatch(new AddArticle(article));
+  }
+
+  detailArticle(article: Article)
+  {
+    this.dtlArticle (article);
+    this.router.navigate(['/detail']);  
+  }
+
+  dtlArticle(article: Article)
+  {
+    this.store.dispatch(new DtlArticle(article));
+  }
+
 }

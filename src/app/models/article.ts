@@ -1,4 +1,5 @@
 export class Article {
+    id: number;
     nom : string;
     titre : string;
     prix : number;

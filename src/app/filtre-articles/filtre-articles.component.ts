@@ -3,7 +3,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-filtre-articles',
   templateUrl: './filtre-articles.component.html',
-  styleUrls: ['./filtre-articles.component.css']
+  styleUrls: ['./filtre-articles.component.sass']
 })
 export class FiltreArticlesComponent implements OnInit {
 
