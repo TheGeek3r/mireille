@@ -1,0 +1,40 @@
+<div class="mb-4">
+     <h2>Bonjour {{user.prenom}}, voici vos informations</h2>
+</div>
+
+<table id="tablePreview" class="table table-bordered">
+            <tbody>
+                    <tr>
+                         <th class="limited-width"><span class="badge badge-primary">Nom :</span></th>
+                         <th><p>{{user.nom}}</p></th>
+                         <th class="limited-width"><span class="badge badge-primary">Prenom : </span></th>
+                         <th><p>{{user.prenom}}</p></th>
+                    </tr>
+                    <tr>
+                         <td><span class="badge badge-primary">Adresse : </span></td>
+                         <td colspan="3"><p>{{user.adresse}}</p></td>
+                    </tr>
+                    <tr>
+                         <td><span class="badge badge-primary">Code Postal :</span></td>
+                         <td><p>{{user.codePostal}}</p></td>
+                         <td><span class="badge badge-primary">Ville : </span></td>
+                         <td><p>{{user.ville}}</p></td>
+                    </tr>
+                    <tr>
+                         <td><span class="badge badge-primary">Telephone :</span></td>
+                         <td><p>{{user.telephone | phone}}</p></td>
+                         <td><span class="badge badge-primary">Email : </span></td>
+                         <td> <p>{{user.email}}</p></td>
+                    </tr>
+                    <tr>
+                         <td><span class="badge badge-primary">Login : </span></td>
+                         <td><p>{{user.login}}</p></td>
+                         <td><span class="badge badge-primary">Civilite : </span></td>
+                         <td><p>{{user.civilite}}</p></td>
+                    </tr>
+            </tbody>
+            <!--Table body-->
+          </table>
+          <!--Table-->
+
+

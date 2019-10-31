@@ -1,0 +1,5 @@
+<div *ngFor="let item of panier | async">
+    <p>{{ item.titre }} - (1 nuit) - {{ item.prix }}€
+        <button type="button" class="btn btn-primary btn-sm" (click)="supprimerDuPanier(item)">Supprimer</button>
+    </p>
+</div>
