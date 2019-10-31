@@ -7,7 +7,7 @@ import { DelArticle } from '../shared/article.action';
 @Component({
   selector: 'app-panier',
   templateUrl: './panier.component.html',
-  styleUrls: ['./panier.component.sass']
+  styleUrls: ['./panier.component.css']
 })
 export class PanierComponent implements OnInit {
 
